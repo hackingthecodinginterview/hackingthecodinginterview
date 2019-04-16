@@ -803,6 +803,157 @@ public class BigO {
 
 
     /**
+     * You are looking for a specific value in a binary tree, but the tree is not a binary
+     * search tree. What is the time complexity of this?
      *
+     * O(n)
+     * Without any ordering property on the nodes, we might have to search through all the nodes.
      */
+
+    /**
+     * The 'appendToNew' method appends a value to an array by creating a new, longer array
+     * and returning this longer array. You've used the 'appendToNew' method to create a
+     * 'copyArray' function that repeatedly calls 'appendToNew'. How long does copying an array take?
+     */
+
+    @Test
+    public void additionalProblems9() {
+        int[] test0 = new int[]{1, 9, 4, 2};
+
+        int[] r = copyArray(test0);
+
+        System.out.println("r: " + Arrays.toString(r));
+    }
+
+    /**
+     * O(n^2)
+     *
+     * where 'n' is the number of elements in the array. The first call to 'appendToNew' takes
+     * 1 copy. The second call takes 2 copies. The third call takes 3 copies. And so on. The
+     * total time will be the sum of 1 through 'n', which is O(n^2).
+     */
+    private int[] copyArray(int[] array) {
+        int[] copy = new int[0];
+        for(int value : array) {
+            copy = appendToNew(copy, value);
+        }
+        return copy;
+    }
+
+    private int[] appendToNew(int[] array, int value) {
+        // copy all elements over to new array
+        int[] bigger = new int[array.length + 1];
+        for(int i = 0; i < array.length; i++) {
+            bigger[i] = array[i];
+        }
+        // add new element
+        bigger[bigger.length - 1] = value;
+        return bigger;
+    }
+
+    /**
+     * The following code sums the digits in a number.
+     * What is its big O time?
+     */
+    @Test
+    public void additionalProblems10() {
+        int r = sumDigits(13);
+        System.out.println("r: " + r);
+    }
+
+    /**
+     * O(log n)
+     *
+     * The runtime will be the number of digits in the number.
+     * A number with 'd' digits can have a value of 10^d.
+     * If n = 10^d, then d = log n
+     * Therefore, the runtime is O(log n)
+     */
+    private int sumDigits(int n) {
+        int sum = 0;
+        while(n > 0) {
+            sum += n % 10;
+            n /= 10;
+        }
+        return sum;
+    }
+
+    /**
+     * The following code prints all strings of length 'k' where the characters are
+     * in sorted order. It does this by generating all strings of length 'k', and then
+     * checking if each is sorted. What is its runtime?
+     */
+    @Test
+    public void additionalProblems11() {
+        int r = sumDigits(13);
+        System.out.println("r: " + r);
+    }
+
+    /**
+     * O(kc^k)
+     *
+     * where 'k' is the length of the string and 'c' is the number
+     * of characters in the alphabet. It takes O(c^k) time to generate
+     * each string. Then, we need to check that each of these is sorted,
+     * which takes O(k) time.
+     */
+    private void printSortedStrings(int remaining) {
+       printSortedStrings(remaining, "");
+    }
+
+    private void printSortedStrings(int remaining, String prefix) {
+        if (remaining == 0) {
+            if(isInOrder(prefix)) {
+                System.out.println(prefix);
+            }
+        } else {
+            for (char c = 'a'; c <= 'z'; c++){
+                printSortedStrings(remaining - 1, prefix + c);
+            }
+        }
+    }
+
+    private boolean isInOrder(String s) {
+        boolean isInOrder = true;
+        for(int i = 1; i < s.length(); i++){
+            //int prev = ithLetter(s.charAt(i - 1));
+            //int curr = ithLetter(s.charAt(i));
+            int prev = s.charAt(i - 1);
+            int curr = s.charAt(i);
+            if(prev > curr) {
+                isInOrder = false;
+            }
+        }
+        return isInOrder;
+    }
+
+    /**
+     * The following code computes the intersection (the number of elements in common)
+     * of two arrays. It assumes that neither array has duplicates. It computes the intersection
+     * by sorting one array (array b) and then iterating through array a checking (via binary
+     * search) if each value is in b. What is its runtime?
+     */
+    @Test
+    public void additionalProblems12() {
+
+    }
+
+    /**
+     * O(b log b + a log b)
+     *
+     * First, we have to sort array b, which takes O(b log b) time.
+     * Then, for each element in a, we do binary search in O(log b)
+     * time. The second part takes O(a log b) time.
+     */
+    private int intersection(int[] a, int[] b) {
+        //mergesort(b);
+        int intersect = 0;
+
+        for(int x : a) {
+//            if(binarySearch(b, x) >= 0) {
+//                intersect++;
+//            }
+        }
+        return intersect;
+    }
 }
