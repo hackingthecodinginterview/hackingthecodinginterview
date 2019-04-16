@@ -23,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BigO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="848">
-              <caret line="604" column="41" selection-start-line="604" selection-start-column="41" selection-end-line="604" selection-end-column="41" />
+            <state relative-caret-position="489">
+              <caret line="804" column="7" lean-forward="true" selection-start-line="804" selection-start-column="7" selection-end-line="804" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#9547#9548#0" expanded="true" />
@@ -41,6 +41,8 @@
                 <element signature="e#15270#15271#0" expanded="true" />
                 <element signature="e#16994#16995#0" expanded="true" />
                 <element signature="e#17020#17021#0" expanded="true" />
+                <element signature="e#22369#22370#0" expanded="true" />
+                <element signature="e#22396#22397#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,7 +114,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555433128969" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555440172724" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -126,62 +128,62 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BigO.example16">
+  <component name="RunManager" selected="JUnit.BigO.additionalProblems5">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BigO.example11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BigO.additionalProblems1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cracking-the-coding-interview.cracking-the-coding-interview.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BigO" />
-      <option name="METHOD_NAME" value="example11" />
+      <option name="METHOD_NAME" value="additionalProblems1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BigO.example12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BigO.additionalProblems2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cracking-the-coding-interview.cracking-the-coding-interview.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BigO" />
-      <option name="METHOD_NAME" value="example12" />
+      <option name="METHOD_NAME" value="additionalProblems2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BigO.example13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BigO.additionalProblems3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cracking-the-coding-interview.cracking-the-coding-interview.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BigO" />
-      <option name="METHOD_NAME" value="example13" />
+      <option name="METHOD_NAME" value="additionalProblems3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BigO.example15" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BigO.additionalProblems4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cracking-the-coding-interview.cracking-the-coding-interview.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BigO" />
-      <option name="METHOD_NAME" value="example15" />
+      <option name="METHOD_NAME" value="additionalProblems4" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BigO.example16" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BigO.additionalProblems5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cracking-the-coding-interview.cracking-the-coding-interview.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BigO" />
-      <option name="METHOD_NAME" value="example16" />
+      <option name="METHOD_NAME" value="additionalProblems5" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -205,11 +207,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BigO.example16" />
-        <item itemvalue="JUnit.BigO.example15" />
-        <item itemvalue="JUnit.BigO.example13" />
-        <item itemvalue="JUnit.BigO.example12" />
-        <item itemvalue="JUnit.BigO.example11" />
+        <item itemvalue="JUnit.BigO.additionalProblems5" />
+        <item itemvalue="JUnit.BigO.additionalProblems4" />
+        <item itemvalue="JUnit.BigO.additionalProblems3" />
+        <item itemvalue="JUnit.BigO.additionalProblems2" />
+        <item itemvalue="JUnit.BigO.additionalProblems1" />
       </list>
     </recent_temporary>
   </component>
@@ -227,35 +229,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BigO_example11 - 2019.04.16 at 11h 49m 35s.xml">
-      <configuration name="BigO.example11" configurationId="JUnit" />
+    <history-entry file="BigO_additionalProblems2 - 2019.04.16 at 14h 25m 56s.xml">
+      <configuration name="BigO.additionalProblems2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigO_example11 - 2019.04.16 at 11h 49m 45s.xml">
-      <configuration name="BigO.example11" configurationId="JUnit" />
+    <history-entry file="BigO_additionalProblems3 - 2019.04.16 at 14h 28m 38s.xml">
+      <configuration name="BigO.additionalProblems3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigO_example12 - 2019.04.16 at 11h 54m 00s.xml">
-      <configuration name="BigO.example12" configurationId="JUnit" />
+    <history-entry file="BigO_additionalProblems3 - 2019.04.16 at 14h 29m 04s.xml">
+      <configuration name="BigO.additionalProblems3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigO_example12 - 2019.04.16 at 11h 54m 16s.xml">
-      <configuration name="BigO.example12" configurationId="JUnit" />
+    <history-entry file="BigO_additionalProblems3 - 2019.04.16 at 14h 29m 23s.xml">
+      <configuration name="BigO.additionalProblems3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigO_example12 - 2019.04.16 at 11h 54m 32s.xml">
-      <configuration name="BigO.example12" configurationId="JUnit" />
+    <history-entry file="BigO_additionalProblems3 - 2019.04.16 at 14h 29m 58s.xml">
+      <configuration name="BigO.additionalProblems3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigO_example13 - 2019.04.16 at 12h 06m 53s.xml">
-      <configuration name="BigO.example13" configurationId="JUnit" />
+    <history-entry file="BigO_additionalProblems3 - 2019.04.16 at 14h 30m 06s.xml">
+      <configuration name="BigO.additionalProblems3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigO_example13 - 2019.04.16 at 12h 07m 32s.xml">
-      <configuration name="BigO.example13" configurationId="JUnit" />
+    <history-entry file="BigO_additionalProblems4 - 2019.04.16 at 14h 38m 01s.xml">
+      <configuration name="BigO.additionalProblems4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigO_example15 - 2019.04.16 at 12h 28m 05s.xml">
-      <configuration name="BigO.example15" configurationId="JUnit" />
+    <history-entry file="BigO_additionalProblems4 - 2019.04.16 at 14h 38m 07s.xml">
+      <configuration name="BigO.additionalProblems4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigO_example15 - 2019.04.16 at 12h 28m 15s.xml">
-      <configuration name="BigO.example15" configurationId="JUnit" />
+    <history-entry file="BigO_additionalProblems4 - 2019.04.16 at 14h 38m 17s.xml">
+      <configuration name="BigO.additionalProblems4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigO_example16 - 2019.04.16 at 12h 45m 31s.xml">
-      <configuration name="BigO.example16" configurationId="JUnit" />
+    <history-entry file="BigO_additionalProblems5 - 2019.04.16 at 14h 42m 48s.xml">
+      <configuration name="BigO.additionalProblems5" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -271,7 +273,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32903227" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32903227" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -296,8 +298,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/BigO.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/BigO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="848">
-          <caret line="604" column="41" selection-start-line="604" selection-start-column="41" selection-end-line="604" selection-end-column="41" />
+        <state relative-caret-position="489">
+          <caret line="804" column="7" lean-forward="true" selection-start-line="804" selection-start-column="7" selection-end-line="804" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#9547#9548#0" expanded="true" />
@@ -314,6 +316,8 @@
             <element signature="e#15270#15271#0" expanded="true" />
             <element signature="e#16994#16995#0" expanded="true" />
             <element signature="e#17020#17021#0" expanded="true" />
+            <element signature="e#22369#22370#0" expanded="true" />
+            <element signature="e#22396#22397#0" expanded="true" />
           </folding>
         </state>
       </provider>

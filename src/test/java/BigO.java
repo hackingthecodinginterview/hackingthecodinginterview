@@ -619,4 +619,190 @@ public class BigO {
     }
 
 
+    /**
+     * The following code computes the product of 'a' and 'b'.
+     * What is its runtime?
+     */
+    @Test
+    public void additionalProblems0() {
+        int r = product(8, 8);
+        System.out.println(r);
+    }
+
+    /**
+     * O(b)
+     *
+     * The for loop just iterates through 'b'.
+     */
+    private int product(int a, int b) {
+        int sum = 0;
+        for(int i = 0; i < b; i++) {
+            sum += a;
+        }
+        return sum;
+    }
+
+    /**
+     * The following code computes a^b
+     *
+     * What is its runtime?
+     */
+    @Test
+    public void additionalProblems1() {
+        int r = power(4,2);
+        System.out.println(r);
+    }
+
+    /**
+     * O(b)
+     *
+     * The recursive code iterates through 'b' calls,
+     * since it subtracts one at each level.
+     */
+    private int power(int a, int b) {
+        if(b < 0) {
+            return 0; // error
+        } else if (b == 0) {
+            return 1;
+        } else {
+            return a * power(a, b-1);
+        }
+    }
+
+    /**
+     * The following code computes a % b
+     *
+     * What is its runtime?
+     */
+    @Test
+    public void additionalProblems2() {
+        int r = mod(12,5);
+        System.out.println(r);
+    }
+
+    /**
+     * O(1)
+     *
+     * It does a constant amount of work.
+     */
+    private int mod(int a, int b) {
+        if(b <= 0) {
+            return -1;
+        }
+        int div = a / b;
+        return a - div * b;
+    }
+
+    /**
+     * The following code performs integer division.
+     *
+     * What is its runtime? Assume 'a' and 'b' are both positive.
+     */
+    @Test
+    public void additionalProblems3() {
+        int r = div(12,2);
+        System.out.println(r);
+    }
+
+    /**
+     * O(a/b)
+     *
+     * The variable 'count' will eventually equal a/b
+     * The while loop iterates count times.
+     * Therefore, it iterates a/b times.
+     */
+    private int div(int a, int b) {
+        int count = 0;
+        int sum = b;
+        while(sum <= a) {
+            sum += b;
+            count++;
+        }
+        return count;
+    }
+
+    /**
+     * The following code computes the [integer] square root
+     * of a number. If the number is not a perfect square (there
+     * is no integer square root), then it returns -1. It does this
+     * by successive guessing. If n is 100, it first guesses 50. Too high?
+     * Try something lower -- halfway between 1 and 50. What is its runtime?
+     */
+    @Test
+    public void additionalProblems4() {
+        int r = sqrt(4);
+        System.out.println(r);
+    }
+
+    /**
+     * O(log n)
+     *
+     * This algorithm is essentially doing a binary search to find
+     * the square root. Therefore, the runtime is O(log n)
+     */
+    private int sqrt(int n) {
+        return sqrt_helper(n, 1, n);
+    }
+
+    private int sqrt_helper(int n, int min, int max) {
+        if(max < min) {
+            return -1; // no square root
+        }
+
+        int guess = (min + max) / 2;
+        if(guess * guess == n) {
+            // found it!
+            return guess;
+        } else if (guess * guess < n) {
+            // too low
+            return sqrt_helper(n, guess + 1, max); // try higher
+        } else {
+            // too high
+            return sqrt_helper(n, min, guess - 1); // try lower
+        }
+    }
+
+    /**
+     * The following code computes the [integer] square root
+     * of a number. If the number is not a perfect square (there
+     * is no integer square root), then it returns -1.
+     *
+     * It does this by trying increasingly large numbers until it finds the right
+     * value (or is too high). What is the runtime?
+     */
+    @Test
+    public void additionalProblems5() {
+        int r = sqrt1(4);
+        System.out.println(r);
+    }
+
+    /**
+     * O(sqrt(n))
+     *
+     * This is just a straightforward loop that stops when
+     * guess * guess > n (or, in other words, when
+     * guess > sqrt(n))
+     */
+    private int sqrt1(int n) {
+        for(int guess = 1; guess * guess <= n; guess++) {
+            if(guess * guess == n) {
+                return guess;
+            }
+        }
+        return -1;
+    }
+
+    /**
+     * If a binary search tree is not balanced, how long might it take (worst case)
+     * to find an element in it?
+     *
+     * O(n) where 'n' is the number of nodes in the tree. The max time to find an element
+     * is the depth of the tree. The tree could be a straight list downwards and have depth 'n'.
+     */
+
+
+
+    /**
+     *
+     */
 }
