@@ -669,19 +669,22 @@ public class ArraysAndStrings {
     private int[][] rotateX(int[][] matrix) {
 
         int n = matrix.length;
+
+        System.out.println("n: " + n);
+
         for(int layer = 0; layer < n / 2; layer++) {
-            int first = layer;
+
             int last = n - 1 - layer;
 
-            for(int i = first; i < last; i++) {
-                int offset = i - first;
-                int top = matrix[first][i]; // save top
+            for(int i = layer; i < last; i++) {
+                int offset = i - layer;
+                int top = matrix[layer][i]; // save top
 
                 // left -> top
-                matrix[first][i] = matrix[last - offset][first];
+                matrix[layer][i] = matrix[last - offset][layer];
 
                 // bottom -> left
-                matrix[last - offset][first] = matrix[last][last - offset];
+                matrix[last - offset][layer] = matrix[last][last - offset];
 
                 // right -> bottom
                 matrix[last][last - offset] = matrix[i][last];
