@@ -345,15 +345,137 @@ public class ArraysAndStrings {
      * precisely, it means that they are different in only one place.
      *
      * INSERTION: The strings "apple" and "aple" are one insertion away. This means that if you compared
-     * the strings, they would be idential -- except for a shift at some point ion the strings.
+     * the strings, they would be identical -- except for a shift at some point ion the strings.
      *
      * REMOVAL: The strings "apple" and "aple" are also one removal away, since removal is just the inverse
      * of insertion.
      */
 
-    
+    @Test
+    public void oneAway(){
+        String replacement0 = "bale";
+        String replacement1 = "pale";
+        boolean r0 = oneEditAway(replacement0, replacement1);
+        System.out.println("r0: " + r0);
+
+        String insertion0 = "apple";
+        String insertion1 = "aple";
+        boolean r1 = oneEditAway(insertion0, insertion1);
+        System.out.println("r1: " + r1);
 
 
+        String removal0 = "apple";
+        String removal1 = "aple";
+        boolean r2 = oneEditAway(removal0, removal1);
+        System.out.println("r2: " + r2);
+    }
+
+    // Observe that you don't need to check the strings for insertion, removal, and replacement edits.
+    // The lengths of the strings will indicate which of these you need to check.
+    private boolean oneEditAway(String first, String second) {
+        if(first.length() == second.length()) {
+            return oneEditReplace(first, second);
+        } else if (first.length() + 1 == second.length()) {
+            return oneEditInsert(first, second);
+        } else if (first.length() - 1 == second.length()) {
+            return oneEditInsert(second, first);
+        }
+        return false;
+    }
+
+    private boolean oneEditReplace(String str1, String str2) {
+        boolean foundDifference = false;
+        for(int i = 0; i < str1.length(); i++)  {
+            if(str1.charAt(i) != str2.charAt(i)) {
+                if (foundDifference) {
+                    return false;
+                }
+                foundDifference = true;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Check if you can insert a character into str1 to make str2.
+     */
+    private boolean oneEditInsert(String str1, String str2) {
+        int index1 = 0;
+        int index2 = 0;
+        while(index2 < str2.length() && index1 < str1.length()) {
+            if(str1.charAt(index1) != str2.charAt(index2)) {
+                if(index1 != index2) {
+                    return false;
+                }
+                index2++;
+            } else {
+                index1++;
+                index2++;
+            }
+        }
+        return true;
+    }
+
+    // This algorithm (and almost any reasonable algorithm) takes O(n) time,
+    // where n is the length of the shorter string.
+
+
+    private boolean oneEditAwayX(String first, String second) {
+        /* Length check */
+        if(Math.abs(first.length() - second.length()) > 1) {
+            return false;
+        }
+
+        /* Get shorter and longer string. */
+        String s1 = first.length() < second.length() ? first : second;
+        String s2 = first.length() < second.length() ? second : first;
+
+        int index1 = 0;
+        int index2 = 0;
+        boolean foundDifference = false;
+        while (index2 < s2.length() && index1 < s1.length()) {
+            if(s1.charAt(index1) != s2.charAt(index2)) {
+                /* Ensure that this is the first difference found */
+                if(foundDifference) {
+                    return false;
+                }
+                foundDifference = true;
+
+                if(s1.length() == s2.length()) {
+                    // On replace, move shorter pointer.
+                    index1++;
+                }
+            } else {
+                index1++; // If matching, move shorter pointer.
+            }
+            index2++;
+        }
+        return true;
+    }
+
+    @Test
+    public void oneAwayX(){
+        String replacement0 = "bale";
+        String replacement1 = "pale";
+        boolean r0 = oneEditAwayX(replacement0, replacement1);
+        System.out.println("r0: " + r0);
+
+        String insertion0 = "apple";
+        String insertion1 = "aple";
+        boolean r1 = oneEditAwayX(insertion0, insertion1);
+        System.out.println("r1: " + r1);
+
+
+        String removal0 = "apple";
+        String removal1 = "aple";
+        boolean r2 = oneEditAwayX(removal0, removal1);
+        System.out.println("r2: " + r2);
+
+        String x0 = "s";
+        String x1 = "matthew";
+        boolean r3 = oneEditAwayX(x0, x1);
+        System.out.println("r3: " + r3);
+    }
 
 }
 
