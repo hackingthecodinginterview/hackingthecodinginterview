@@ -477,6 +477,115 @@ public class ArraysAndStrings {
         System.out.println("r3: " + r3);
     }
 
+    /**
+     * Implement a method to perform basic string compression using the counts of repeated characters.
+     * For example, the string 'aabcccccaaa' would become 'a2b1c5a3'. If the "compressed" string would
+     * not become smaller than the original string, your method should return the original string. You
+     * can assume the string has only uppercase and lowercase letters (a-z).
+     */
+
+    @Test
+    public void stringCompression() {
+        String i0 = "aabcccccaaa";
+        String r0 = compressBad(i0);
+        System.out.println("r0: " + r0);
+    }
+
+    /**
+     * The runtime is O(p + k^2), where p is the size of the original string and k is the number
+     * of character sequences. For example, if the string is "aabcccccaaa", then there are six
+     * character sequences. It's slow because string concatenation operates in O(n^2) time.
+     */
+    String compressBad(String str) {
+        String compressedString = "";
+
+        int countConsecutive = 0;
+        for(int i = 0; i < str.length(); i++){
+            countConsecutive++;
+
+            /* If next character is different than current, append this char to result. */
+            if(i + 1 >= str.length() || str.charAt(i) != str.charAt(i + 1)) {
+                compressedString += "" + str.charAt(i) + countConsecutive;
+                countConsecutive = 0;
+            }
+        }
+        return compressedString.length() < str.length() ? compressedString : str;
+    }
+
+    private String compress(String str) {
+        StringBuilder compressed = new StringBuilder();
+        int countConsecutive = 0;
+        for(int i = 0; i < str.length(); i++) {
+            countConsecutive++;
+
+            /* If next character is different than current, append this char to result. */
+            if(i + 1 >= str.length() || str.charAt(i) != str.charAt(i + 1)) {
+                compressed.append(str.charAt(i));
+                compressed.append(countConsecutive);
+                countConsecutive = 0;
+            }
+        }
+        return compressed.length() < str.length() ? compressed.toString() : str;
+    }
+
+    @Test
+    public void stringCompressionX() {
+        String i0 = "aabcccccaaazzzzzzzzzzzzz";
+        String r0 = compress(i0);
+        System.out.println("r0: " + r0);
+    }
+
+    /**
+     * One other benefit of this approach is that we can initialize StringBuilder to its necessary capacity up-front.
+     * Without this, StringBuilder will (behind the scenes) need to double its capacity every time it hits capacity.
+     * The capacity could be double what we ultimately need.
+     */
+
+    private String compressZ(String string) {
+        /* Check final length and return input string if it would be longer. */
+        int finalLength = countCompression(string);
+        if(finalLength >= string.length()) {
+            return string;
+        }
+
+        StringBuilder compressed = new StringBuilder(finalLength); // initial capacity
+        int countConsecutive = 0;
+        for(int i = 0; i < string.length(); i++) {
+            countConsecutive++;
+            /* If next character is different than current, append this char to result. */
+            if(i+1 >= string.length() || string.charAt(i) != string.charAt(i + 1)) {
+                compressed.append(string.charAt(i));
+                compressed.append(countConsecutive);
+                countConsecutive = 0;
+            }
+        }
+        return compressed.toString();
+    }
+
+    private int countCompression(String str) {
+        int compressedLength = 0;
+        int countConsecutive = 0;
+        for(int i = 0; i < str.length(); i++) {
+            countConsecutive++;
+
+            /* If next character is different than current, increase the length. */
+            if(i + 1 >= str.length() || str.charAt(i) != str.charAt(i + 1)) {
+                compressedLength += 1 + String.valueOf(countConsecutive).length();
+                countConsecutive = 0;
+            }
+        }
+        return compressedLength;
+    }
+
+    @Test
+    public void stringCompressionZ() {
+        String i0 = "aabcccccaaazzzzzzzzzzzzz";
+        String r0 = compressZ(i0);
+        System.out.println("r0: " + r0);
+    }
+
+    
+
 }
 
 

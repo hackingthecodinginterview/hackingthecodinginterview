@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b91b775-ca52-499b-9400-942567c2b808" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ArraysAndStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ArraysAndStrings.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ArraysAndStrings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="456" column="24" selection-start-line="456" selection-start-column="24" selection-end-line="456" selection-end-column="24" />
+            <state relative-caret-position="402">
+              <caret line="586" column="4" selection-start-line="586" selection-start-column="4" selection-end-line="586" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,7 +135,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555738598920" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555740872863" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -150,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ArraysAndStrings.oneAwayX">
+  <component name="RunManager" selected="JUnit.ArraysAndStrings.stringCompressionZ">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -179,33 +178,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArraysAndStrings.permutationPalindrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArraysAndStrings.stringCompression" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cracking-the-coding-interview.cracking-the-coding-interview.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ArraysAndStrings" />
-      <option name="METHOD_NAME" value="permutationPalindrome" />
+      <option name="METHOD_NAME" value="stringCompression" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArraysAndStrings.permutationPalindrome0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArraysAndStrings.stringCompressionX" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cracking-the-coding-interview.cracking-the-coding-interview.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ArraysAndStrings" />
-      <option name="METHOD_NAME" value="permutationPalindrome0" />
+      <option name="METHOD_NAME" value="stringCompressionX" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArraysAndStrings.permutationPalindromeX" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArraysAndStrings.stringCompressionZ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cracking-the-coding-interview.cracking-the-coding-interview.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ArraysAndStrings" />
-      <option name="METHOD_NAME" value="permutationPalindromeX" />
+      <option name="METHOD_NAME" value="stringCompressionZ" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -229,11 +228,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArraysAndStrings.stringCompressionZ" />
+        <item itemvalue="JUnit.ArraysAndStrings.stringCompressionX" />
+        <item itemvalue="JUnit.ArraysAndStrings.stringCompression" />
         <item itemvalue="JUnit.ArraysAndStrings.oneAwayX" />
         <item itemvalue="JUnit.ArraysAndStrings.oneAway" />
-        <item itemvalue="JUnit.ArraysAndStrings.permutationPalindromeX" />
-        <item itemvalue="JUnit.ArraysAndStrings.permutationPalindrome0" />
-        <item itemvalue="JUnit.ArraysAndStrings.permutationPalindrome" />
       </list>
     </recent_temporary>
   </component>
@@ -251,35 +250,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ArraysAndStrings_urlify - 2019.04.18 at 00h 04m 54s.xml">
-      <configuration name="ArraysAndStrings.urlify" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArraysAndStrings_urlify - 2019.04.18 at 00h 04m 56s.xml">
-      <configuration name="ArraysAndStrings.urlify" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArraysAndStrings_permutationPalindrome - 2019.04.18 at 00h 18m 02s.xml">
-      <configuration name="ArraysAndStrings.permutationPalindrome" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArraysAndStrings_permutationPalindrome - 2019.04.18 at 00h 18m 23s.xml">
-      <configuration name="ArraysAndStrings.permutationPalindrome" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArraysAndStrings_permutationPalindrome0 - 2019.04.18 at 00h 25m 51s.xml">
-      <configuration name="ArraysAndStrings.permutationPalindrome0" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArraysAndStrings_permutationPalindromeX - 2019.04.18 at 00h 45m 06s.xml">
-      <configuration name="ArraysAndStrings.permutationPalindromeX" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArraysAndStrings_oneAway - 2019.04.20 at 00h 46m 58s.xml">
-      <configuration name="ArraysAndStrings.oneAway" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArraysAndStrings_oneAway - 2019.04.20 at 00h 47m 21s.xml">
-      <configuration name="ArraysAndStrings.oneAway" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArraysAndStrings_oneAway - 2019.04.20 at 00h 47m 54s.xml">
-      <configuration name="ArraysAndStrings.oneAway" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ArraysAndStrings_oneAway - 2019.04.20 at 00h 48m 50s.xml">
       <configuration name="ArraysAndStrings.oneAway" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArraysAndStrings_oneAwayX - 2019.04.20 at 01h 35m 46s.xml">
+      <configuration name="ArraysAndStrings.oneAwayX" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArraysAndStrings_oneAwayX - 2019.04.20 at 01h 35m 59s.xml">
+      <configuration name="ArraysAndStrings.oneAwayX" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArraysAndStrings_oneAwayX - 2019.04.20 at 01h 36m 29s.xml">
+      <configuration name="ArraysAndStrings.oneAwayX" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArraysAndStrings_oneAwayX - 2019.04.20 at 01h 36m 41s.xml">
+      <configuration name="ArraysAndStrings.oneAwayX" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArraysAndStrings_stringCompression - 2019.04.20 at 01h 50m 06s.xml">
+      <configuration name="ArraysAndStrings.stringCompression" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArraysAndStrings_stringCompression - 2019.04.20 at 01h 50m 35s.xml">
+      <configuration name="ArraysAndStrings.stringCompression" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArraysAndStrings_stringCompressionX - 2019.04.20 at 01h 56m 30s.xml">
+      <configuration name="ArraysAndStrings.stringCompressionX" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArraysAndStrings_stringCompressionX - 2019.04.20 at 01h 56m 43s.xml">
+      <configuration name="ArraysAndStrings.stringCompressionX" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArraysAndStrings_stringCompressionZ - 2019.04.20 at 02h 14m 35s.xml">
+      <configuration name="ArraysAndStrings.stringCompressionZ" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -295,7 +294,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32903227" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32903227" />
       <window_info anchor="bottom" x="1" y="23" width="1679" height="648" id="Debug" order="3" type="FLOATING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -364,8 +363,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ArraysAndStrings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="456" column="24" selection-start-line="456" selection-start-column="24" selection-end-line="456" selection-end-column="24" />
+        <state relative-caret-position="402">
+          <caret line="586" column="4" selection-start-line="586" selection-start-column="4" selection-end-line="586" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
